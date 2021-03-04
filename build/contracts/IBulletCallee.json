@@ -1,0 +1,403 @@
+{
+  "contractName": "IBulletCallee",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "bulletCall",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"bulletCall\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/marcr/OneDrive/Escritorio/bulletfinance/bullet-swap-core/contracts/interfaces/IBulletCallee.sol\":\"IBulletCallee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[]},\"sources\":{\"/C/Users/marcr/OneDrive/Escritorio/bulletfinance/bullet-swap-core/contracts/interfaces/IBulletCallee.sol\":{\"keccak256\":\"0x0a4da2aa2f9ca19700a495337ee31072b60e2c43f958ea6b9a6ad61d5d380fb7\",\"urls\":[\"bzz-raw://44accb5df99549ccc36defba6b0fc7f13b0563355be207fbb3b328af77a07a27\",\"dweb:/ipfs/Qma4YgaJZPnL2x6BguafzkwgsYQYVMsExs6SM7FQv3mpLW\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.5.0;\r\n\r\ninterface IBulletCallee {\r\n    function bulletCall(address sender, uint amount0, uint amount1, bytes calldata data) external;\r\n}\r\n",
+  "sourcePath": "C:\\Users\\marcr\\OneDrive\\Escritorio\\bulletfinance\\bullet-swap-core\\contracts\\interfaces\\IBulletCallee.sol",
+  "ast": {
+    "absolutePath": "/C/Users/marcr/OneDrive/Escritorio/bulletfinance/bullet-swap-core/contracts/interfaces/IBulletCallee.sol",
+    "exportedSymbols": {
+      "IBulletCallee": [
+        1682
+      ]
+    },
+    "id": 1683,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1670,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1682,
+        "linearizedBaseContracts": [
+          1682
+        ],
+        "name": "IBulletCallee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1681,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bulletCall",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1679,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1672,
+                  "name": "sender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1681,
+                  "src": "79:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1671,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "79:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1674,
+                  "name": "amount0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1681,
+                  "src": "95:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1673,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "95:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1676,
+                  "name": "amount1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1681,
+                  "src": "109:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1675,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1678,
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1681,
+                  "src": "123:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 1677,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "123:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "78:65:4"
+            },
+            "returnParameters": {
+              "id": 1680,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "152:0:4"
+            },
+            "scope": 1682,
+            "src": "59:94:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1683,
+        "src": "28:128:4"
+      }
+    ],
+    "src": "0:158:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/marcr/OneDrive/Escritorio/bulletfinance/bullet-swap-core/contracts/interfaces/IBulletCallee.sol",
+    "exportedSymbols": {
+      "IBulletCallee": [
+        1682
+      ]
+    },
+    "id": 1683,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1670,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1682,
+        "linearizedBaseContracts": [
+          1682
+        ],
+        "name": "IBulletCallee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1681,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bulletCall",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1679,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1672,
+                  "name": "sender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1681,
+                  "src": "79:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1671,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "79:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1674,
+                  "name": "amount0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1681,
+                  "src": "95:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1673,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "95:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1676,
+                  "name": "amount1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1681,
+                  "src": "109:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1675,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1678,
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1681,
+                  "src": "123:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 1677,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "123:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "78:65:4"
+            },
+            "returnParameters": {
+              "id": 1680,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "152:0:4"
+            },
+            "scope": 1682,
+            "src": "59:94:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1683,
+        "src": "28:128:4"
+      }
+    ],
+    "src": "0:158:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.0",
+  "updatedAt": "2021-03-04T11:42:29.878Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
