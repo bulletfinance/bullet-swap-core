@@ -1,11 +1,11 @@
 {
-  "name": "@pancakeswap-libs/pancake-swap-core",
-  "description": "🎛 Core contracts for the pancake protocol",
+  "name": "@bullet-finance/bullet-swap-core",
+  "description": "🎛 Core contracts for the BulletSwap protocol",
   "version": "0.1.0",
-  "homepage": "https://pancakeswap.finance",
+  "homepage": "https://bullet.finance",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pancakeswap/pancake-swap-core.git"
+    "url": "https://github.com/bulletfinance/bullet-swap-core.git"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
